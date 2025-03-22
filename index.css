@@ -18,7 +18,8 @@
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 15px 30px;
+    padding: 15px 0px;
+    padding-right : 50px;
     backdrop-filter: blur(10px);
     background-color: rgba(255, 255, 255, 0.05);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -47,6 +48,7 @@
   /* Hero Section */
   .hero {
     min-height: 100vh;
+    padding-top: 100px; /* added this */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -97,4 +99,121 @@
   .btn.outline:hover {
     background-color: rgba(255, 255, 255, 0.1);
   }
+
+  .scroll-down {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: -40px;
+    animation: bounce 1.8s infinite;
+    color: #3b82f6;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+  }
+  
+  .about {
+    padding: 100px 20px;
+    text-align: center;
+    background-color: #1e293b;
+  }
+  
+  .about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .about p {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    color: #cbd5e1;
+    font-size: 1.1rem;
+  }
+  
+  .info-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 20px;
+    width: 300px;
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .card h3 {
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  
+  .card p {
+    color: #cbd5e1;
+  }
+  @media (max-width: 480px) {
+    .about {
+      padding: 60px 10px;
+    }
+  }
+  
+  /* Make nav stack on small screens */
+@media (max-width: 768px) {
+    .nav-content {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  
+    .nav-links {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .nav-links a {
+      margin: 5px 0;
+    }
+  
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+    }
+  
+    .buttons {
+      flex-direction: column;
+    }
+  
+    .btn {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .info-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      width: 90%;
+    }
+  }
+  
   
