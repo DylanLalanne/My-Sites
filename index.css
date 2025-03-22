@@ -44,6 +44,50 @@
   .nav-links a:hover {
     color: #ffffff;
   }
+
+  .articles {
+    padding: 100px 20px;
+    text-align: left;
+  }
+  
+  .articles h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .articles p {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    color: #cbd5e1;
+    text-align: center;
+    font-size: 1.1rem;
+  }
+  
+  .article-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .article h3 a {
+    color: #3b82f6;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  
+  .article h3 a:hover {
+    text-decoration: underline;
+  }
+  
+  .article p {
+    color: #94a3b8;
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
   
   /* Hero Section */
   .hero {
