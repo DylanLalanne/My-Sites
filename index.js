@@ -1,4 +1,6 @@
-particlesJS("particles-js", {
+// Ensure DOM is loaded before initializing particles
+document.addEventListener("DOMContentLoaded", function () {
+  particlesJS("particles-js", {
     particles: {
       number: {
         value: 80,
@@ -42,4 +44,4 @@ particlesJS("particles-js", {
     },
     retina_detect: true
   });
-  
+});

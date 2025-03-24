@@ -1,108 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <link rel= "stylesheet" href="index.css">
-  <link rel="javascript" href="index.js">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dylan's Portfolio</title>
- 
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dylan's Portfolio - Strategic Thinker, Developer, and Future CPA">
+    <title>Dylan's Portfolio</title>
+  </head>
+  <body>
+    <!-- Background Particles -->
     <div id="particles-js"></div>
-  
-    <nav class="glass-nav">
+    
+    <!-- Navigation -->
+    <nav class="glass-nav" aria-label="Main Navigation">
       <div class="nav-content">
         <span class="logo">Dylan</span>
         <div class="nav-links">
-          <a href="#">About</a>
-          <a href="#">Projects</a>
-          <a href="#">Contact</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
         </div>
       </div>
     </nav>
-      
-  
+    
+    <!-- Hero Section -->
     <section class="hero">
       <h1>Hello, I'm Dylan</h1>
       <p>Strategic Thinker · Developer · Future CPA</p>
       <div class="buttons">
-        <a href="#" class="btn">Download Resume</a>
-        <a href="#" class="btn outline">Contact Me</a>
+        <a href="resume.pdf" class="btn">Download Resume</a>
+        <a href="#contact" class="btn outline">Contact Me</a>
       </div>
     </section>
     
+    <!-- Articles Section -->
     <section class="articles container">
-        <h2>My Writings</h2>
-        <p>
-          Essays and ideas on design, justice, freedom, technology, and culture—from Mubi films to the future of power and financial independence.
-        </p>
-      
-        <div class="article-list">
-          <div class="article">
-            <h3><a href="#">On Mubi: Why Art Still Matters</a></h3>
-            <p>A reflection on why cinema, emotion, and storytelling still shape how we think and act in a data-driven world.</p>
-          </div>
-      
-          <div class="article">
-            <h3><a href="#">Leveling the Playing Field</a></h3>
-            <p>How we can redesign systems—financial, educational, and legal—to give more people a real chance at success.</p>
-          </div>
+      <h2>My Writings</h2>
+      <p>
+        Essays and ideas on design, justice, freedom, technology, and culture—from Mubi films to the future of power and financial independence.
+      </p>
+      <div class="article-list">
+        <div class="article">
+          <h3><a href="#">On Mubi: Why Art Still Matters</a></h3>
+          <p>A reflection on why cinema, emotion, and storytelling still shape how we think and act in a data-driven world.</p>
         </div>
-      </section>
-    <div class="scroll-down">↓</div>
-
-<section class="about">
-  <h2>About Me</h2>
-  <p>
-    I'm a computer science + accounting student building tools to empower people financially and technically.
-    I love clean code, powerful ideas, and becoming elite at everything I do.
-  </p>
-
-  <div class="info-cards">
-    <div class="card">
-      <h3>🧠 Interests</h3>
-      <p>Cybersecurity,  AI, Economy, Finance, Tax Law, Psychology</p>
-    </div>
-    <div class="card">
-      <h3>💼 Projects</h3>
-      <p>Building a finance tracker app with Python + SQL + AWS</p>
-    </div>
-    <div class="card">
-      <h3>📈 Vision</h3>
-      <p>A world where every person, no matter where they start, or
-        who they are have the tools, knowledge, 
-        and freedom to build a life of dignity, purpose, and wealth. </p>
-    </div>
-    <div class="card">
-      <h3> Mission</h3>
-      <p> 
-        To level the playing field by
-        building knowledge, tools, and systems that make 
-        freedom and success possible for anyone willing to pursue it.</p>
-    </div>
-    <div class="card">
-      <h3>📚 Learning</h3>
-      <p>React, Node.js, AWS, CPA, Cybersecurity</p>
-    </div>
-   
-  </div>
-</section>
-  
+        <div class="article">
+          <h3><a href="#">Leveling the Playing Field</a></h3>
+          <p>How we can redesign systems—financial, educational, and legal—to give more people a real chance at success.</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Scroll Down Indicator -->
+    <div class="scroll-down" aria-hidden="true">↓</div>
+    
+    <!-- About Section -->
+    <section id="about" class="about">
+      <h2>About Me</h2>
+      <p>
+        I'm a computer science + accounting student building tools to empower people financially and technically.
+        I love clean code, powerful ideas, and becoming elite at everything I do.
+      </p>
+      <div class="info-cards">
+        <div class="card">
+          <h3>🧠 Interests</h3>
+          <p>Cybersecurity, AI, Economy, Finance, Tax Law, Psychology</p>
+        </div>
+        <div class="card">
+          <h3>💼 Projects</h3>
+          <p>Building a finance tracker app with Python, SQL, and AWS</p>
+        </div>
+        <div class="card">
+          <h3>📈 Vision</h3>
+          <p>A world where every person, no matter where they start or who they are, has the tools, knowledge, and freedom to build a life of dignity, purpose, and wealth.</p>
+        </div>
+        <div class="card">
+          <h3>Mission</h3>
+          <p>To level the playing field by building knowledge, tools, and systems that make freedom and success possible for anyone willing to pursue it.</p>
+        </div>
+        <div class="card">
+          <h3>📚 Learning</h3>
+          <p>React, Node.js, AWS, CPA, Cybersecurity</p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer id="contact">
+      &copy; 2025, All Rights Reserved
+    </footer>
+    
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="index.js"></script>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){ dataLayer.push(arguments); }
-  gtag('js', new Date());
-
-  gtag('config', 'G-XXXXXXXXXX');
-</script>
-
+    <!-- Google Tag Manager -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
   </body>
-
-  <footer> &copy; 2025, All Rights Reserved</footer>
-
 </html>
