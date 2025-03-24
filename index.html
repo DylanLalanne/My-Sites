@@ -2,13 +2,18 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="index.css">
+    <!-- Viewport for mobile responsiveness -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Dylan's Portfolio - Strategic Thinker, Developer, and Future CPA">
+
+    <!-- Title -->
     <title>Dylan's Portfolio</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="index.css">
   </head>
   <body>
-    <!-- Background Particles -->
+    <!-- Background Particles Container -->
     <div id="particles-js"></div>
     
     <!-- Navigation -->
@@ -17,7 +22,7 @@
         <div class="nav-links">
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
-          <a href="articles">Articles</a>
+          <a href="#articles">Articles</a>
           <a href="#contact">Contact</a>
         </div>
       </div>
@@ -25,32 +30,31 @@
     
     <!-- Hero Section -->
     <section class="hero">
-      <h1>Hello, I'm <span class = "name"> Dylan </span></h1>
+      <h1>Hello, I'm <span class="name">Dylan</span></h1>
       <p>Strategic Thinker · Developer · Writer</p>
-    <div class="buttons">
+      <div class="buttons">
         <a href="resume.pdf" class="btn">Download Resume</a>
         <a href="#contact" class="btn">Contact Me</a>
       </div>
     </section> 
     
     <!-- Articles Section -->
-    <section class="articles container">
+    <section id="articles" class="articles container">
       <h2>My Writings</h2>
       <p>
-        Topics on pyschology, economy, accounting & finance, and technology. 
+        Topics on psychology, economy, accounting & finance, and technology.
       </p>
       <div class="article-list">
         <div class="buttons">
           <div class="article">
-          <a href="resume.pdf" class="btn outline">A deeper look into UBI</a>
+            <a href="resume.pdf" class="btn outline">A Deeper Look into UBI</a>
           </div>
           <div class="article">
-          <a href="#contact" class="btn outline">Leveling the playing Field</a>
+            <a href="#contact" class="btn outline">Leveling the Playing Field</a>
           </div>
         </div>
       </div>
-      </section>
-       
+    </section>
     
     <!-- Scroll Down Indicator -->
     <div class="scroll-down" aria-hidden="true">↓</div>
@@ -60,7 +64,6 @@
       <h2>About Me</h2>
       <p>
         I'm a computer science + accounting student building tools to empower others.
-       
       </p>
       <div class="info-cards">
         <div class="card">
@@ -73,7 +76,10 @@
         </div>
         <div class="card">
           <h3>📈 Vision</h3>
-          <p>To level the playing field by building knowledge, tools, and systems that make freedom and success possible for anyone willing to pursue it.</p>
+          <p>
+            To level the playing field by building knowledge, tools, and systems
+            that make freedom and success possible for anyone willing to pursue it.
+          </p>
         </div>
         <div class="card">
           <h3>📚 Learning</h3>
@@ -88,9 +94,11 @@
     </footer>
     
     <!-- Scripts -->
+    <!-- 1) Particles.js Library -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- 2) Your Custom JS -->
     <script src="index.js"></script>
-    <!-- Google Tag Manager -->
+    <!-- 3) Google Tag Manager (Optional) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
     <script>
       window.dataLayer = window.dataLayer || [];

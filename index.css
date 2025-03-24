@@ -7,12 +7,14 @@
   left: 0;
   z-index: -1;
 }
+
+/* Highlighted Name Style */
 .name {
   color: #EF4444;
   font-size: 3rem;
 }
 
-/* Global StylesS */
+/* Global Styles */
 body {
   margin: 0;
   font-family: sans-serif;
@@ -79,12 +81,11 @@ body {
 .buttons {
   display: flex;
   gap: 20px;
-  
 }
 
 .btn {
-  padding:12px 24px;
-  margin: 70px;
+  padding: 12px 24px;
+  margin: 20px 0;
   background-color: #3b82f6;
   color: white;
   text-decoration: none;
@@ -256,6 +257,7 @@ footer {
   .btn {
     width: 100%;
     text-align: center;
+    margin: 10px 0;
   }
 
   .info-cards {

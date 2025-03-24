@@ -1,4 +1,4 @@
-// Ensure DOM is loaded before initializing particles
+// Initialize Particles on DOMContentLoaded
 document.addEventListener("DOMContentLoaded", function () {
   particlesJS("particles-js", {
     particles: {
