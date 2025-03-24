@@ -129,12 +129,12 @@ body {
 
 .article-list {
   display: flex;
-  flex-direction: column;
-  gap: 30px;
-  max-width: 800px;
-  margin: 0 auto;
+  justify-content: center; /* centers them horizontally */
+  gap: 1rem;              /* space between items */
+  flex-wrap: wrap;        /* wraps to new line on small screens */
+  max-width: 800px;       /* optional: keeps them from stretching too wide */
+  margin: 0 auto;    
 }
-
 .article h3 a {
   color: #3b82f6;
   text-decoration: none;
