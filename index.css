@@ -7,6 +7,10 @@
   left: 0;
   z-index: -1;
 }
+.name {
+  color: #EF4444;
+  font-size: 3rem;
+}
 
 /* Global StylesS */
 body {
@@ -75,10 +79,12 @@ body {
 .buttons {
   display: flex;
   gap: 20px;
+  
 }
 
 .btn {
-  padding: 12px 24px;
+  padding:12px 24px;
+  margin: 70px;
   background-color: #3b82f6;
   color: white;
   text-decoration: none;
