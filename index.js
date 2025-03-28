@@ -3,26 +3,26 @@ document.addEventListener("DOMContentLoaded", function () {
   particlesJS("particles-js", {
     particles: {
       number: {
-        value: 80,
+        value: 100,
         density: {
           enable: true,
-          value_area: 800
+          value_area: 300
         }
       },
-      color: { value: "#ffffff" },
+      color: { value: "ffffff" },
       shape: { type: "circle" },
       opacity: { value: 0.5 },
       size: { value: 3 },
       line_linked: {
         enable: true,
-        distance: 150,
+        distance: 100,
         color: "#ffffff",
-        opacity: 0.4,
+        opacity: .4,
         width: 1
       },
       move: {
         enable: true,
-        speed: 2
+        speed: .55
       }
     },
     interactivity: {
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
       },
       modes: {
         grab: {
-          distance: 140,
+          distance: 50,
           line_linked: {
             opacity: 1
           }

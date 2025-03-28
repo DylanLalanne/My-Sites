@@ -33,15 +33,18 @@ body {
   background-color: rgba(255, 255, 255, 0.05);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   z-index: 10;
+  flex-direction: row;
 }
 
 .nav-content {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+ /* allows wrapping on smaller screens if needed */
+  gap: 1.5rem;     /* spacing between links */
 }
 
+
 .nav-links a {
+  flex-direction: row;
   margin-left: 20px;
   text-decoration: none;
   color: #cbd5e1;
@@ -92,6 +95,7 @@ body {
   border-radius: 9999px;
   font-weight: 600;
   transition: background-color 0.3s, transform 0.2s;
+  flex-direction: row;
 }
 
 .btn:hover {
@@ -129,12 +133,25 @@ body {
 
 .article-list {
   display: flex;
-  justify-content: center; /* centers them horizontally */
-  gap: 1rem;              /* space between items */
-  flex-wrap: wrap;        /* wraps to new line on small screens */
-  max-width: 800px;       /* optional: keeps them from stretching too wide */
-  margin: 0 auto;    
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  margin-top: 35px;
 }
+
+.article a {
+  padding: 0.5rem 1rem;
+  border: 2px solid white;
+  border-radius: 30px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  max-width: 300px;
+  width: 100%;
+  word-wrap: break-word;
+}
+
 .article h3 a {
   color: #3b82f6;
   text-decoration: none;
@@ -234,15 +251,16 @@ footer {
 
   .nav-links {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
   }
 
-  .nav-links a {
-    margin: 5px 0;
-  }
+  
 
   .hero h1 {
+    font-size: 2rem;
+  }
+  .name {
     font-size: 2rem;
   }
 
@@ -254,10 +272,16 @@ footer {
     flex-direction: column;
   }
 
-  .btn {
+  
+
+  .article {
     width: 100%;
     text-align: center;
-    margin: 10px 0;
+    margin: 0px 0;
+    margin-bottom: 10px;
+  }
+  .article-list{
+    margin-bottom: 100px;
   }
 
   .info-cards {
